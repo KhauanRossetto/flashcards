@@ -1,3 +1,152 @@
-body{
-    background-color: #FB6B6B;
+body {
+  background-color: #FB6B6B;
+  display: flex;
+  flex-direction: column; /* empilha os elementos verticalmente */
+  align-items: center;     /* centraliza na horizontal */
+  margin-bottom: 150px;
+}
+
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+    margin-left: 30px;/* Remova o margin-left: 20vw daqui */
+  }
+  
+  .logo img {
+    width: 56px;
+    height: 60px;
+    /* Remova o margin-left: 20vw daqui também */
+  }
+  
+  .logo span {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Righteous', cursive;
+  }
+  .caixa-pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 65px;
+    margin-top: 50px;
+  }
+  
+  .bloco-resposta {
+    background-color: #FFFFD4;
+    width: 299px;
+    height: 131px;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .bloco-resposta-grande {
+    background-color: #FFFFD4;
+    width: 299px;
+    height: 131px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .texto-topo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .texto-pergunta {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .botao-icon,.icone-inferior {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .icone-inferior {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .botoes-resposta {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .botao {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 4px;
+  }
+  
+  .vermelho {
+    background-color: #FF3030;
+  }
+  
+  .laranja {
+    background-color: #FF922E;
+  }
+  
+  .verde {
+    background-color: #2FBE34;
+  }
+
+  .texto-vermelho {
+    color: red;
+    text-decoration: line-through;
+    font-size: 20px;
+  }
+  
+  .texto-laranja {
+    color: orange;
+    text-decoration: line-through;
+    font-size: 20px;
+  }
+  
+  .texto-verde {
+    color: green;
+    text-decoration: line-through;
+    font-size: 20px;
+  }
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
