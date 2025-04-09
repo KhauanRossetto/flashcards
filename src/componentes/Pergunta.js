@@ -14,7 +14,7 @@ function Pergunta({ numero, pergunta, resposta, onResponder }) {
   const finalizarResposta = (tipo) => {
     if (!respondido) {
       setRespondido(true);
-      onResponder(); // Chama o callback passado pelo App
+      onResponder();
     }
     setRespostaFinal(tipo);
     setEtapa(1);
